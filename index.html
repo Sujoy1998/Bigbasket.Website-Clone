@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bigbasket</title>
+    <title>Bigbasket : A TATA Enterprise</title>
     <script src="https://kit.fontawesome.com/79bf64b12c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" />
 </head>
@@ -25,36 +25,502 @@
     <div id="Location">
         <p><i class="fa-solid fa-location-dot"></i> Select Location</p>
     </div>
-    <div id="Login">
+    <div id="Login" onclick=signIn()>
         <p>Login/Sign Up</p>
     </div>
 </div>
 <div id="second-top">
     <div id="category">
-        <h4>Shop by Category</h4>
+        <a href="#snacks-top"><h3>Shop by Category</h3></a>
     </div>
-    <div>
-        <h5>Exotic Fruits</h5>
+    <div class="drop-down">
+        <div class="dropdown-button">
+           <a>Exotic Fruits</a>
+        </div>
+        <div class="hover-content">
+            <a>Apple</a>
+            <a>Banana</a>
+            <a>Orange</a>
+        </div>
     </div>
-    <div>
-        <h5>Tea</h5>
+    
+    <div class="drop-down">
+        <div class="dropdown-button">
+           <a>Beverages</a>
+        </div>
+        <div class="hover-content">
+            <a>Tea/Coffee</a>
+            <a>Soft Drink</a>
+            <a>Fruit Juice</a>
+        </div>
     </div>
-    <div>
-        <h5>Ghee</h5>
+
+    <div class="drop-down">
+        <div class="dropdown-button">
+           <a>Cake & Dairy</a>
+        </div>
+        <div class="hover-content">
+            <a>Brown Bread</a>
+            <a>Amul Butter</a>
+            <a>Fresh Paneer</a>
+        </div>
     </div>
-    <div>
-        <h5>Chocolates</h5>
+    <div class="drop-down">
+        <div class="dropdown-button">
+           <a>Chocolates</a>
+        </div>
+        <div class="hover-content">
+            <a>Dairy Milk</a>
+            <a>Dark Chocolate</a>
+            <a>Amul</a>
+        </div>
     </div>
-    <div>
-        <h5>Fresh Vegetables</h5>
+   
+    <div class="drop-down">
+        <div class="dropdown-button">
+           <a>Beauty products</a>
+        </div>
+        <div class="hover-content">
+            <a>Shampoo</a>
+            <a>Deodorant</a>
+            <a>Face Wash</a>
+        </div>
     </div>
+
     <div>
-        <h5>Offers</h5>
+        <button class="options"><a href="#bank-offer1">% Offers </a></button>
     </div>
     
 </div>
 </div>
+
+<!------------------My Smart Basket-------->
+
+<div id="first-basket">
+    <div class="top-border">
+        <h3>Eggs,Meat And Fresh</h3>
     </div>
+<div>
+    <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_250923_02.png?tr=w-1920,q=80" width="150px" height="60px">
+</div>
+<div class="top-border">
+    <h3>AYURVEDA</h3>
+</div>
+<div class="top-border">
+    <h3>BUY MORE SAVE MORE</h3>
+</div>
+<div class="top-border">
+    <h3>DEALS OF THE WEEK</h3>
+</div>
+<div class="top-border" >
+    <h3>COMBO STORE</h3>
+</div>
+
+</div>
+
+<!------------------My Smart Basket 2nd part-------->
+<div id="smart-basket">
+    <div id="first-container">
+        <div>
+            <h2>My Smart Basket</h2>
+        </div>
+        <div>
+            <h2 style="text-decoration: underline;">View All >></h2>
+        </div>
+    </div>
+    <div id="all-list">
+       <div class="first-part">
+         <div class="Vegetables">
+           <div>
+            <span class="offer">44% OFF</span>
+           </div> 
+             <img src="image/carrot.jpg">
+        </div>
+         <p>Fresho</p>
+         <p>Carrot-Orange</p>
+         <div>
+            <select class="kg">
+                <option>500 Grm.</option>
+                <option>1 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+              </select>
+         </div>
+         <h3 style="padding-left: 10px;">Price: ₹80</h3>
+         <div>
+            <p class="add">Add</p>
+         </div>
+         </div>
+
+         <div class="first-part">
+                 <div class="Vegetables">
+                    <div>
+                    <span class="offer">30% OFF</span>
+                   </div> 
+                     <img src="image/capsicum.webp">
+                </div>
+            <p>Fresho</p>
+            <p>Capsicum-Green(Loose)</p>
+            <div>
+                <select class="kg">
+                    <option>500 Grm.</option>
+                    <option>1 Kg</option>
+                    <option>2 Kg</option>
+                    <option>3 Kg</option>
+                  </select>
+            </div>
+            <h3 style="padding-left: 10px;">Price: ₹64</h3>
+            <div >
+               <p class="add">Add</p>
+            </div>
+         </div>
+
+            <div class="first-part">
+                <div class="Vegetables">
+                    <div>
+                        <span class="offer">25% OFF</span>
+                       </div> 
+                         <img src="image/strawberry.jpg">
+               </div>
+                <p>Fresho</p>
+                <p>Strawberry</p>
+                <div>
+                    <select class="kg">
+                        <option>500 Grm.</option>
+                        <option>1 Kg</option>
+                        <option>2 Kg</option>
+                        <option>3 Kg</option>
+                      </select>
+                </div>
+                <h3 style="padding-left: 10px;">Price: ₹220</h3>
+                <div>
+                   <p class="add" >Add</p>
+                </div>
+             </div>
+
+                <div class="first-part">
+                    <div class="Vegetables">
+                        <div>
+                            <span class="offer">45% OFF</span>
+                           </div> 
+                             <img src="image/coliflower.webp" height="225px" width="250px">
+                   </div>
+                    <p>Fresho</p>
+                    <p>Cauliflower</p>
+                    <div>
+                        <select class="kg">
+                            <option>1 Piece</option>
+                            <option>2 Piece</option>
+                            <option>5 Piece</option>
+                            <option>10 Piece</option>
+                          </select>
+                    </div>
+                    <h3 style="padding-left: 10px;">Price: ₹40</h3>
+                    <div>
+                       <p class="add">Add</p>
+                    </div>
+                    </div>
+       </div>
+    </div>
+</div>
+
+    <!------------------Bank Offer-------->
+<div id="bank-offer1">
+    <h1 style="text-decoration:underline; margin-left: 130px;">Bank Offers :</h1>
+    <div id="bank-offer">
+       <div> <img src="image/American-bank.webp" height="300px" width="300px"></div>
+       <div> <img src="image/icici bank.webp" height="300px" width="300px"></div>
+       <div><img src="image/indusland.webp" height="290px" width="300px"></div>
+        <div><img src="image/offers.jpg" height="300px" width="300px"></div>
+    </div>
+</div>
+
+ <!------------------Best Seller-------->
+
+<div id="best-seller">
+    <div id="second-container">
+        <div>
+            <h2>Best Sellers</h2>
+        </div>
+        <div>
+            <h2 style="text-decoration: underline;">Show More >></h2>
+        </div>
+    </div>
+    <div id="all-items">
+       <div class="first-part">
+         <div class="Vegetables">
+           <div>
+            <span class="offer">61% OFF</span>
+           </div> 
+             <img src="image/pampers.webp" width="300px" height="250px">
+        </div>
+         <p>Littles</p>
+         <p>Baby Wipes-With Aloe Vera, Vitamin E & Jojoba Oil</p>
+         <div>
+            <select class="kg">
+                <option>72 Wipes-(Pack of 4)</option>
+                <option>50 Wipes</option>
+                <option>20 Wipes</option>
+              </select>
+         </div>
+
+         <div id="price">
+             <h3 style="padding-left: 10px;">Price: ₹315 </h3>
+         </div>
+
+         <div>
+            <p class="add">Add</p>
+         </div>
+         </div>
+
+         <div class="first-part">
+            <div class="Vegetables">
+                <div>
+                    <span class="offer">47% OFF</span>
+                   </div> 
+                     <img src="image/pampers-green.webp" width="300px" height="250px">
+                </div>
+            <p>BigBasket</p>
+            <p>Baby Wipes-fRESH, Double Moisturizing & No Paraben</p>
+            <div>
+                <select class="kg">
+                    <option>3x80 Pcs-Multipack</option>
+                    <option>80 Pcs</option>
+                    <option>4x80 Pcs</option>                  
+                  </select>
+            </div>
+            <h3 style="padding-left: 10px;">Price: ₹569.96</h3>
+            <div >
+               <p class="add">Add</p>
+            </div>
+         </div>
+
+            <div class="first-part">
+                <div class="Vegetables">
+                    <div>
+                        <span class="offer">63% OFF</span>
+                       </div> 
+                         <img src="image/pampers--blue.webp" width="300px" height="250px" >
+               </div>
+                <p>Little</p>
+                <p>Baby Diaper Pants-XL,With Wetness Indicator & 12 Hours</p>
+                <div>
+                    <select class="kg">
+                        <option>50 Wipes-(Pack of 2)</option>
+                        <option>20 Wipes</option>
+                        <option>10 Wipes</option>
+                      </select>
+                </div>
+                <h3 style="padding-left: 10px;">Price: ₹80</h3>
+                <div>
+                   <p class="add" >Add</p>
+                </div>
+             </div>
+
+                <div class="first-part">
+                    <div class="Vegetables">
+                        <div>
+                            <span class="offer">40% OFF</span>
+                           </div> 
+                             <img src="image/pampers-red.webp" width="300px" height="250px">
+                   </div>
+                    <p>BigBasket</p>
+                    <p>Baby Wipes - Cherry Blossom,No Paraben, Double Moisturizing</p>
+                    <div>
+                        <select class="kg">
+                            <option>2x24 Pcs-Multipack</option>
+                            <option>24 Pcs</option>
+                            <option>12 Pcs</option>
+                          </select>
+                    </div>
+                    <h3 style="padding-left: 10px;">Price: ₹210</h3>
+                    <div>
+                       <p class="add">Add</p>
+                    </div>
+                    </div>
+       </div>
+    </div>
+</div>
+
+  <!------------------Top-Offers-------->
+
+   <div id="offertop-section">
+    <h2 style="padding-left: 10px;padding-top: 5px;">Top Offers</h2>
+    <div id="offer-section">
+    <div class="top-offers">
+        <img src="image/top-offer.1.webp">
+    </div>
+
+    <div class="top-offers">
+        <img src="image/top-offer.2.webp">
+    </div>
+
+    <div class="top-offers">
+        <img src="image/top-offer.3.webp">
+    </div>
+
+    <div class="top-offers">
+        <img src="image/top-offer.4.webp">
+    </div>
+  </div>
+
+  <!------------------Snacks Store -------->
+<div class="snacks-top">
+    <h2 style="padding-left: 10px;">Snacks Store</h2>
+    <div class="snacks-store">
+        <div>
+            <img src="image/snacks.1.webp">
+        </div>
+        <div>
+            <img src="image/snacks.2.webp">
+        </div>
+        <div>
+            <img src="image/snacks.3.webp">
+        </div>
+        <div>
+            <img src="image/snacks.4.webp">
+        </div>
+    </div>
+</div>
+
+
+<div id="snacks-top">
+    <h2 style="padding-left: 10px; padding-top: 2px;">Beauty and Hygiene</h2>
+    <div id="beauty-store">
+        <div>
+            <img src="image/beauty.4.webp">
+        </div>
+        <div>
+            <img src="image/beauty.3.webp">
+        </div>
+        <div>
+            <img src="image/Beauty.1.webp">
+        </div>
+        <div>
+            <img src="image/beauty.6.webp">
+        </div>
+        <div>
+            <img src="image/beauty.2.webp">
+        </div>
+        <div>
+            <img src="image/beauty.5.webp">
+        </div>
+    </div>
+</div>
+
+<div class="snacks-top">
+    <h2 style="padding-left: 10px;">Cleaning & Household</h2>
+    <div class="snacks-store">
+        <div>
+            <img src="image/cleaning.1.webp">
+        </div>
+        <div>
+            <img src="image/cleaning.2.webp">
+        </div>
+        <div>
+            <img src="image/cleaning.3.webp">
+        </div>
+        <div>
+            <img src="image/cleaning.4.webp">
+        </div>
+    </div>
+</div>
+
+      <!------------------Last Portion-------->
+
+      <div style="padding: 10px;">
+        <a href="https://www.bigbasket.com/" target="_blank" style="color:red; text-decoration: none;">bigbasket – online grocery store</a>
+        <p>Did you ever imagine that the freshest of fruits and vegetables,
+         top-quality pulses and food grains, dairy products, and hundreds of 
+         branded items could be handpicked and delivered to your home, all at
+          the click of a button? In today's fast-paced world, bigbasket.com, 
+          India's pioneering online grocery store, continues to bring a staggering 
+          array of over 40,000 products from more than 1,000 brands to the doorsteps 
+          of over 10 million satisfied customers. From essential household cleaning products 
+          to the latest beauty and makeup trends, bigbasket remains your one-stop shop for daily needs.
+          <br> <br>We now serve 300+ cities and towns across India and ensure swift delivery times, 
+          guaranteeing that all your groceries, snacks and branded foods reach you on time.
+          <br> <br>Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, 
+          ranging from early morning delivery for early birds to late-night delivery for those on the 
+          night shift. bigbasket caters to every schedule.
+          <br> <br>Instant delivery from bbnow: In response to the ever-increasing demand for convenience, 
+          bbnow by bigbasket offers lightning-fast grocery delivery, ensuring that your essentials are at 
+          your doorstep within 15-30 minutes. Our quick delivery service has revolutionized the way you shop
+           for groceries. Choose from 5000+ grocery essentials. bbnow is available only in select cities.
+
+        </p>
+        </div>
+      
+    </div>
+
+    <div id="last-portion">
+        <div>
+            <h3>Bigbasket</h3>
+            <p>About Us</p>
+            <p>Become A bigbasket Rider</p>
+            <p>Green bigbasket</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p>Careers At bigbasket</p>
+            <p>bb Blog</p>
+        </div>
+
+        <div>
+            <h3>Help</h3>
+            <p>FAQs</p> 
+            <p>Contact Us</p>
+            <p>bb Wallet FAQs</p>
+            <p>bb Wallet T&Cs</p>
+            <p>Vendor Connect</p>
+        </div>
+        
+        <div>
+            <img src="image/logo.png"height="100px" width="300px">
+            <div>
+                <img src="image/google play.png" height="70px" width="220px">
+                <img src="image/apple store.png" height="70px" width="220px">
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------Login page -------->
+   <div id="loginpage">
+    <div class="close" onclick=signIn()>
+        <button>X</button>
+    </div>
+    <div>
+        <h1 class="text-3xl" style="text-decoration: underline;">Login/Sign Up</h1>
+    </div>
+    <div>
+        <label for="email" class="text-gray-900"><h4>Phone No./Email Id:</h4></label>
+        <input
+          type="text"
+          
+          class="border block w-full p-2 mt-2 rounded"
+          placeholder= "Enter phone No./Email Id"
+        />
+      </div>  
+
+      <div>
+        <label for="email" class="text-gray-900"><h4>Password:</h4></label>
+        <input
+          type="text"
+          
+          class="border block w-full p-2 mt-2 rounded"
+          placeholder= "Enter Your Password"
+        />
+      </div>  
+
+      <button style="background-color: red; border:none; color:white; height:40px; width:100px;margin-top: 15px; margin-bottom: 10px;text-align: center; border-radius: 10px;"
+        type="continue"
+        class="bg-black text-white py-2 mt-4 inline-block w-full rounded"
+      >
+        Continue
+      </button>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
 
+<!-- <div class="ReviewsAndRatings___StyledDiv-sc-2rprpc-0 xQwmo"><span class="Label-sc-15v1nk5-0 Badges___StyledLabel-sc-1k3p1ug-0 gJxZPQ kAyiFy leading-xxs"><span class="Label-sc-15v1nk5-0 gJxZPQ">4.2</span><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" class="Badges___StyledStarIcon-sc-1k3p1ug-1 qKzFq"><path d="M5.99967 9.23762L3.95958 10.357C3.34224 10.6957 2.93339 10.4129 3.04766 9.7176L3.44489 7.3004L1.78365 5.61036C1.29016 5.10832 1.45737 4.61531 2.15478 4.50955L4.42073 4.16591L5.45629 1.976C5.75639 1.34137 6.24292 1.3413 6.54305 1.976L7.5786 4.16591L9.84456 4.50955C10.543 4.61547 10.71 5.10744 10.2157 5.61036L8.55444 7.3004L8.95168 9.7176C9.06537 10.4095 8.65717 10.6958 8.03975 10.357L5.99967 9.23762Z"></path></svg></span><span class="Label-sc-15v1nk5-0 ReviewsAndRatings___StyledLabel-sc-2rprpc-1 gJxZPQ egHBA-d">187 Ratings</span></div> -->

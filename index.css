@@ -8,14 +8,23 @@
     display:flex;
     height: 60px;
     margin: auto;
-    gap: 15%;
+    gap: 8%;
     padding-left: 10%;
     border: 0px solid gainsboro;
 }
 #search1{
-width: 100px;
+width: 40%;
 margin-top: 20px;
+margin-left: 20px;
 }
+#search1 input{
+height: 80%;
+width:100%;
+border: 1px solid red;
+
+}
+
+
 #Location{
     border: 2px solid grey;
     background-color: aliceblue;
@@ -40,19 +49,425 @@ margin-top: 20px;
      border-radius: 40%;
 }
 
+/*---------------------------Content Hover--------------------*/
+
+.dropdown-button{
+    background-color: #476F00;
+    color:white;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dropdown-button a{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.drop-down{
+    position: relative;
+    display: inline-block;
+
+}
+.hover-content{
+    display: none;
+    position: absolute;
+    top:50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width:150px;
+    width:100%;
+    background-color: white;
+}
+.hover-content>a{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+background-color: yellowgreen;
+} 
+.hover-content a:hover{
+    background-color: grey;
+}
+
+.drop-down:hover .hover-content{
+    display: block;
+}
+
 #second-top{
     display: flex;
     margin: auto;
-    gap: 8%;
-    padding-left: 10%;
+    gap: 5%;
+    padding-left: 9%;
     margin-top: 20px;
+    padding-bottom: 5px;
 }
 #category{
-    border: 0px solid #0edb0e;
+border: 0px solid #0edb0e;
 background-color: #0edf0e;
 color:white;
 padding-left: 10px;
 padding-right: 10px;
 cursor: pointer;
 border-radius: 10%;
+
+}
+
+#category a{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.options {
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0 20px 10px -20px rgba(0,0,0,0.45) inset, 0 -20px 10px -20px rgba(0,0,0,0.45) inset, -20px 0 10px -20px rgba(0,0,0,0.45) inset;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    background-color: aquamarine;
+    text-decoration: none;
+}
+.options a{
+    text-decoration: none;
+}
+
+/*---------------------------My Smart Basket--------------------*/
+
+#first-basket{
+    display:flex;
+    gap:40px;
+    padding: auto;
+    padding-top: 20px;
+    padding-left: 110px;
+    box-shadow: 0px 4px 10px 0px;
+    box-sizing: content-box;
+    padding-bottom: 10px;
+}
+
+.top-border{
+    border: 1px solid rgb(138, 240, 138);
+    background-color: rgb(138, 240, 138);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+     border-radius: 10%;
+     cursor: pointer;   
+}
+
+/*---------------------------My Smart Basket 2nd part--------------------*/
+#smart-basket{
+margin:auto;
+margin-left: 10%;
+margin-right: 10%;
+border: 1px solid whitesmoke;
+background-color: whitesmoke;
+padding-top: 10px;
+}
+
+#first-container{
+    display: flex;
+    padding-left: 20px;
+    gap:70%;
+}
+
+#all-list{
+    display: flex;
+    gap: 30px;
+    padding-left: 12px;
+    padding-right: 20px;
+    
+}
+.offer{
+    background-color: #476F00;
+    color:#FFFFFF;
+    padding: 2px 10px;
+    border-radius: 6px;
+}
+
+.first-part{
+    
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    vertical-align: baseline;
+    width:30%;
+    height:50%;
+    box-shadow: 0px 4px 10px 0px;
+    box-sizing: content-box;
+}
+.first-part > p{
+    padding-left: 10px;
+}
+
+.kg{
+    border: 1px solid grey;
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.add{
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 80px;
+    }
+
+    .add:hover{
+        background-color: red;
+        color: white;
+    }
+
+
+.Vegetables{
+    border: 1px solid grey;
+    padding-left: 20px;
+}
+.Vegetables img{
+    height:225px;
+    width:250px;
+}
+
+/*---------------------------Login Page--------------------*/
+
+* {
+    box-sizing: border-box;
+  }
+  #loginpage{
+    display: none;
+    position:absolute;
+    top:15%;
+    left:20%;
+    z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  margin-left: 20%;
+  margin-top: 5%;
+  background-color:whitesmoke;
+  border:2px solid black;
+  height: 50%;
+  width:30%;
+  }
+
+.close{
+    margin-right: -85%;
+    /* border: 2px solid black; */
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+  /*-------------Bank-offer--------- Shadow copy from CSS Box Shadow Google-----------*/
+  #bank-offer{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+     gap: 20px;
+     padding-left: 50px;
+     padding: 10px;
+     border-radius: 10px;
+      
+  }
+  #bank-offer >div> img{
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+    border-radius: 10px;
+  }
+
+  /*---------------------------Best-Seller--------------------*/
+
+  #best-seller{
+    margin:auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    padding-top: 10px;
+
+}
+
+#second-container{
+    display: flex;
+    padding-left: 20px;
+    gap:70%;
+}
+
+#all-items{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*---------------------------Top Offer-Section--------------------*/
+
+#offertop-section{
+margin-top: 2%;
+margin-left: 7%;
+margin-right: 7%;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+cursor: pointer;
+}
+
+#offer-section{
+display: flex;
+gap:5%;
+background-color: whitesmoke;
+padding-left: 50px;
+
+}
+
+.top-offers{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+   
+}
+.top-offers>img{
+    height:200px;
+    width:250px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius:10px;
+}
+
+/*---------------------------Snacks Store--------------------*/
+
+#snacks-top{
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.snacks-store{
+    display: flex;
+    gap:15px;
+    padding-left: 2%;
+}
+.snacks-store img{
+    height:250px;
+    width:300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+
+#beauty-store{
+    display: flex;
+    gap:10px;
+    padding-left: 20px; 
+   
+}
+
+#beauty-store img{
+    height:200px;
+    width:200px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+}
+
+#last-portion{
+    background-color: black;
+    display: flex;
+    color:#FFFFFF;
+    gap:20%;
+    padding: 15px;
+    padding-left:80px;
+}
+
+/*---------------------------Media-Query--------------------*/
+
+@media only screen and (max-width:700px){
+    #Location{
+        display: none;
+    }
+    #top-section{
+        gap:5%;
+        padding-left: 5%;
+    }
+    #top-section>div img{
+        width: 80px;
+        height: 50px;
+    }
+    .options{
+        display: none;
+    }
+    #category{
+        display: none;
+    }
+    #second-top{
+        gap:3%;
+        padding-left: 2%;
+    }
+    .dropdown-button{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #first-basket{
+        gap: 10px;
+        padding-left: 10px;
+    }
+    #first-basket>div img{
+        display: none;
+    }
+
+    #smart-basket{
+        height: 20%;
+    }
+
+    #first-container{
+        gap:40%;
+    }
+    #all-list{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 250px 250px;
+        gap:20px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 700px;
+        
+    }
+    .Vegetables img{
+        height:60px;
+        width:70px;
+    }
+
+    .first-part{
+        width:40%;
+        height: 10%;
+    }
+
+    #bank-offer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(2, 1fr); 
+        gap:5%;
+        height:400px;
+    }
+    #bank-offer>div img{
+        height: 200px;
+        width: 200px;
+    }
+
+    #offer-section{
+        display: grid;
+        grid-template-columns: 70px 70px;
+        gap:30%;
+        margin: 0px;
+        padding: 0px;
+        height: 5%;
+    }
+    .top-offers>img{
+        height: 150px;
+        width: 200px;
+    }
 }
